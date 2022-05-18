@@ -4,19 +4,12 @@ Feature: login Page
   As a Registered user
   I want to specify the login conditions   
 
-Scenario: Login Page
+	Scenario: Login Page
     Given user is on landing page
     And Sign in button is present on screen
     When user enters "kobiz.technology@gmail.com" in username field
     And user enters "retto-test" in password field
     And user clicks Sign in button
     Then title of page is "ThingsBoard Demo | Home"
-    
-Scenario: Check Device List
-    Given user is logged
-    When user clicks Devices link
-    Then title of page is "ThingsBoard Demo | Devices"
-    And devices are listed
-    
-    
+
      
